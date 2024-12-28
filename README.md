@@ -70,17 +70,17 @@ Dataset bersumber dari Spotify yang didapatkan dengan package spotifyr oleh Kayl
 - Rock Dataset tersebut berisi 23 fitur dan 5000 lagu.
 
 ### Pemrosesan Data
-    1. Import Dataset dari Github
-    ```
+1. Import Dataset dari Github
+    ```bash
     !git clone https://github.com/Nvaraotr/ABD_project.git
     ```
-    2. Pembersihan Data
-    [gambar]
-    3. Cetak Informasi dan Deskripsi Data
-    [gambar df.info() dan df.description()]
-    4. Pencarian Data Baru yang Dapat di Analisiskan
-    [gambar avg_popularity]
-    5. Kesimpulan Data
+2. Pembersihan Data
+   [gambar]
+3. Cetak Informasi dan Deskripsi Data
+   [gambar df.info() dan df.description()]
+4. Pencarian Data Baru yang Dapat di Analisiskan
+   [gambar avg_popularity]
+5. Kesimpulan Data
 
 ## Rangkuman Analisis
 
