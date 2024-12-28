@@ -15,11 +15,11 @@ Analisis ini diharapkan dapat membantu konsumen seperti kreator playlist agar da
 Dataset yang digunakan bersumber dari Spotify yang didapatkan dengan package spotifyr oleh Kaylin Pavlik dari 6 kategori/genre lagu yaitu EDM, Latin, Pop, R&B, Rap, & Rock. Dataset tersebut berisi 23 fitur dan 5000 lagu.
 
 ## Table of Contents
-*[Pendahuluan](#pendahuluan)
-*[Package](#package)
-*[Data Preparation](#data-preparation)
-*[Rangkuman Analisis](#rangkuman-analisis)
-*[Project Preparation](#project-preparation)
+* [Pendahuluan](#pendahuluan)
+* [Package](#package)
+* [Data Preparation](#data-preparation)
+* [Rangkuman Analisis](#rangkuman-analisis)
+* [Project Preparation](#project-preparation)
 
 
 ## Pendahuluan
