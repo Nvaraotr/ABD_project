@@ -67,7 +67,7 @@ Dataset bersumber dari Spotify yang didapatkan dengan package spotifyr oleh Kayl
 - Pop
 - R&B 
 - Rap 
-- Rock Dataset tersebut berisi 23 fitur dan 5000 lagu.
+- Rock
 
 ### Pemrosesan Data
 1. Import Dataset dari Github
@@ -75,15 +75,42 @@ Dataset bersumber dari Spotify yang didapatkan dengan package spotifyr oleh Kayl
     !git clone https://github.com/Nvaraotr/ABD_project.git
     ```
 2. Pembersihan Data
-   [gambar]
-3. Cetak Informasi dan Deskripsi Data
-   [gambar df.info() dan df.description()]
-4. Pencarian Data Baru yang Dapat di Analisiskan
-   [gambar avg_popularity]
-5. Kesimpulan Data
+   - Memeriksa dan mengatasi missing value
+   ![missing](assets/missing_value.png)
+   
+   ```bash
+    rata_rating = spotify.groupby('track_artist')['track_popularity'].mean()
+    spotify['avg_popularity'] = spotify['track_artist'].map(round(rata_rating))
+
+    ceknull = 0
+    for i in spotify['avg_popularity']:
+      if np.isnan(i):
+        spotify['avg_popularity'] = spotify['avg_popularity'].fillna(spotify['avg_popularity'].mean())
+    ```
+   
+   - Memeriksa dan duplicate value
+     
+   ![duplicate](assets/duplicate_value.png)
+
+4. Cetak Informasi dan Deskripsi Data
+   ![dataset info](assets/dataset_info.png)
+   
+   ![dataset describe](assets/dataset_describe.png)
+   
+6. Pencarian Data Baru yang Dapat di Analisiskan
+   ```bash
+    rata_rating = spotify.groupby('track_artist')['track_popularity'].mean()
+    spotify['avg_popularity'] = spotify['track_artist'].map(round(rata_rating))
+    ```
+   ![artist popularity](assets/artist_avg_popularity.png)
+
+   Dengan ditambahkannya variabel/fitur baru yaitu "avg_popularity" kita dapat melihat artis yang memiliki popularitas dari tertinggi sampai terendah berdasarkan lagu yang mereka buat
+
+7. Kesimpulan Data
+   Fitur "avg_popularity" dirancang untuk menghitung rata-rata popularitas lagu yang dihasilkan oleh seorang artis, berdasarkan gabungan kolom track_artist dan track_popularity. Fungsi utama fitur ini adalah untuk menilai konsistensi dan tingkat keberhasilan artis dalam menciptakan lagu-lagu populer.
 
 ## Rangkuman Analisis
-
+Berdasarkan analisis kami musik yang memiliki popularitas tinggi cenderung dapat digunakan untuk berdansa sehingga lagu-lagu ini dapat mengisi kejenuhan di saat pandemi ataupun saat ingin mendapatkan hiburan tetapi terbatasi situasi dan kondisi.
 
 ## 🦕 **Project Preparation** 🦖
 
