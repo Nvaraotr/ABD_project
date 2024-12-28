@@ -9,9 +9,9 @@ Dataset yang digunakan bersumber dari Spotify yang didapatkan dengan package spo
 
 ![Spotify](assets/Music.jpg)
 
-Analisis Big Data A
-Ardhika Yoga Pratama (202110370311458)
-Romadhon Wiratama (202110370311471)
+### Analisis Big Data A
+* Ardhika Yoga Pratama (202110370311458)
+* Romadhon Wiratama (202110370311471)
 
 ## Table of Contents
 * [Pendahuluan](#pendahuluan)
